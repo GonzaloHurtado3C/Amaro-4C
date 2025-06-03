@@ -1,0 +1,167 @@
+/* {
+    outline: 1px solid red;
+} */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #5620d3;
+}
+
+.contenedor {
+    display: flex;
+    height: 100vh;
+}
+
+/* NAV */
+.nav {
+    background-color: #325994;
+    color: white;
+    min-width: 200px;
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+}
+
+.nav h2 {
+    margin-bottom: 20px;
+}
+
+.nav ul {
+    list-style: none;
+}   
+
+.nav li {
+    margin: 10px 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #ffd54f;
+}
+
+.decoracion-huellas img {
+    width: 100%;
+}
+
+/* CONTENIDO */
+.contenido {
+    flex: 4;
+    padding: 30px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    flex-direction: column; /* dirección de elementos en columnas, vertical */
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.tarjeta {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+/* Proporciones */
+.grande {
+    flex: 3;
+    background-color: #ffd54f;
+}
+
+.mediana {
+    flex: 2;
+    background-color: #4fc3f7;
+}
+
+.pequeña {
+    flex: 1;
+    background-color: #d63ba8;
+}
+
+.tarjeta.grande {
+    flex: 2;
+    background-color: #5c5edb;
+}
+
+.tarjeta.grande {
+    font-weight: bold;
+    text-align: center;
+    padding: 0%;
+    padding-bottom: 20px;
+    width: 150px;
+    height: 200px;
+}
+
+.tarjeta.grande img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.mediana-vertical {
+    font-weight: bold;
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;     /* Centrarlo horizontalmente */
+    justify-content: center; /* Centrarlo verticalmente */
+    padding: 10px;
+    background-color: #ab47bc;
+}
+
+.mediana-vertical img {
+    width: 106%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.pequeña-vertical {
+    font-weight: bold;
+    width: 250px;
+    height: 215px;
+    display: flex;
+    flex-direction: column; /* Pone los elementos uno debajo de otro en vertical */
+    align-items: center;
+    padding: 5px;
+    background-color: #14bddb;
+}
+
+.pequeña-vertical img {
+    width: 104%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.larga-horizontal {
+    width: 400px;
+    height: 150px;
+    background-color: #ab47bc;
+    flex: none;
+}

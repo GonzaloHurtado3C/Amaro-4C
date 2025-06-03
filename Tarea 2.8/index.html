@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sitio Temático Flex</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="contenedor">
+        <nav class="nav">
+            <h2>🐾 Registro de la extinción</h2>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Favoritos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div class="decoracion-huellas">
+                <img src="img/huellas.png" alt="huellas">
+            </div>
+        </nav>
+        <!-- Div con todos los elementos usando "row" para separarlos-->
+        <main class="contenido">
+            <h1>🦖 Galería de especies extintas</h1>
+            <div class="galeria">
+                <div class="row"> <!--clase "Row" para separar los divs-->
+                    <div class="tarjeta grande">
+                        <p>Lobo de Tasmania</p>
+                        <img src="img/tasmania-lobo.jpg" alt="lobo de Tasmania"> <!--Poner imagen dentro del div con su respectiva descripción-->
+                    </div>
+                    <div class="tarjeta mediana-vertical">
+                        <p>Mamut</p>
+                        <img src="img/mamut.jpg" alt="Mamut">
+                    </div>
+                    <div class="tarjeta pequeña-vertical">
+                        <p>Dodo</p>
+                        <img src="img/Dodo.jpg" alt="Dodo">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="tarjeta pequeña">Curiosidad 1</div>
+                    <div class="tarjeta larga-horizontal">Curiosidad 2</div>
+                    <div class="tarjeta mediana"> Curiosidad 4</div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
