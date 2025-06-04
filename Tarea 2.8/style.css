@@ -1,6 +1,6 @@
-/* {
+* {
     outline: 1px solid red;
-} */
+} *
 
 * {
     box-sizing: border-box;
@@ -10,7 +10,7 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #5620d3;
+    background-color: #198edd;
 }
 
 .contenedor {
@@ -20,7 +20,7 @@ body {
 
 /* NAV */
 .nav {
-    background-color: #325994;
+    background-color: #09466e;
     color: white;
     min-width: 200px;
     flex: 1;
@@ -76,7 +76,6 @@ body {
 }
 
 .tarjeta {
-    padding: 30px;
     border-radius: 10px;
     background-color: #fff;
     text-align: center;
@@ -145,17 +144,27 @@ body {
 .pequeña-vertical {
     font-weight: bold;
     width: 250px;
-    height: 215px;
     display: flex;
     flex-direction: column; /* Pone los elementos uno debajo de otro en vertical */
     align-items: center;
-    padding: 5px;
     background-color: #14bddb;
 }
 
 .pequeña-vertical img {
-    width: 104%;
-    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.mediana-horizontal {
+    font-weight: bold;
+    width: 350px;
+    height: 200px;
+    background-color: #0044ff;
+}
+
+.mediana-horizontal img {
+    width: 100%;
+    height: 89%;
     border-radius: 10px;
 }
 
@@ -164,4 +173,9 @@ body {
     height: 150px;
     background-color: #ab47bc;
     flex: none;
+}
+
+.larga-horizontal img{
+    width: 100%;
+    height: 100%;
 }
