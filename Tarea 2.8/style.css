@@ -1,6 +1,6 @@
-* {
+/* {
     outline: 1px solid red;
-} *
+} */
 
 * {
     box-sizing: border-box;
@@ -10,22 +10,21 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: #198edd;
+    background-color: #199dc9;
 }
 
 .contenedor {
     display: flex;
-    height: 100vh;
 }
 
 /* NAV */
 .nav {
-    background-color: #09466e;
+    background-color: #0c6aa8;
     color: white;
     min-width: 200px;
     flex: 1;
     max-width: 300px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .nav h2 {
@@ -51,6 +50,13 @@ body {
 }
 
 .decoracion-huellas img {
+    width: 100%;
+}
+.decoracion-hueso img {
+    width: 100%;
+}
+
+.decoracion-cabeza img {
     width: 100%;
 }
 
@@ -105,7 +111,7 @@ body {
 
 .tarjeta.grande {
     flex: 2;
-    background-color: #5c5edb;
+    background-color: #1cc9e7;
 }
 
 .tarjeta.grande {
@@ -132,7 +138,7 @@ body {
     align-items: center;     /* Centrarlo horizontalmente */
     justify-content: center; /* Centrarlo verticalmente */
     padding: 10px;
-    background-color: #ab47bc;
+    background-color: #1cc9e7;
 }
 
 .mediana-vertical img {
@@ -144,6 +150,7 @@ body {
 .pequeña-vertical {
     font-weight: bold;
     width: 250px;
+    height: 195px;
     display: flex;
     flex-direction: column; /* Pone los elementos uno debajo de otro en vertical */
     align-items: center;
@@ -152,6 +159,7 @@ body {
 
 .pequeña-vertical img {
     width: 100%;
+    height: 150%;
     border-radius: 10px;
 }
 
@@ -159,7 +167,7 @@ body {
     font-weight: bold;
     width: 350px;
     height: 200px;
-    background-color: #0044ff;
+    background-color: #1cc9e7;
 }
 
 .mediana-horizontal img {
@@ -169,13 +177,42 @@ body {
 }
 
 .larga-horizontal {
-    width: 400px;
-    height: 150px;
-    background-color: #ab47bc;
+    font-weight: bold;
+    width: 350px;
+    height: 180px;
+    background-color: #1cc9e7;
     flex: none;
 }
 
 .larga-horizontal img{
     width: 100%;
-    height: 100%;
+    height: 88%;
+    border-radius: 10px;
+}
+
+.pequeña-horizontal {
+    font-weight: bold;
+    width: 250px;
+    height: 190px;
+    background-color: #1cc9e7;
+    flex: none;
+}
+
+.pequeña-horizontal img {
+    width: 100%;
+    height: 89%;
+    border-radius: 10px;
+}
+
+.grande-horizontal {
+    font-weight: bold;
+    width: 450px;
+    height: 260px;
+    background-color: #14bddb;
+}
+
+.grande-horizontal img {
+    width: 100%;
+    height: 92%;
+    border-radius: 7px;
 }
